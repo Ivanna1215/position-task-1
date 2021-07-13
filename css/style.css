@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "raleway";
-    src: url("/position-task1/fonts/Raleway/Raleway-Regular.ttf");
+    font-family: "Raleway";
+    src: url("/fonts/Raleway/Raleway-Regular.ttf");
 }
 .container {
     width: 1500px;
@@ -19,9 +19,11 @@
 /* line-height: 25px; */
 color: #ffffff;
 font-weight: 700;
-font-family: "Raleway";
+
+font-family: "Raleway" ;
 text-align: center;
 margin: 0 655px 30px 655px;
+
 }
 .text {
     width: 563px;
@@ -38,29 +40,49 @@ text-align: center;
 margin: 30px 469px;
 }
 .element-1 {
-    background: url(/position-task1/img/juice.png);
+    background: url("/position-task-1/img/juice.png");
     width: 372px;
     height:311px;
     margin: 10px;
+    position: relative;
+   
 }
+.gradient {
+    /* background-image: linear-gradient(0deg, #000000 0%, #ffffff 100%); */
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 100%);
+    width: 372px;
+    height:150px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0.5;
+    transition: opacity 3s ease 0s;
+}
+.element-1:hover .gradient {
+    opacity:0;
+}
+
 .element-2 {
-    background: url(/position-task1/img/suup.png);
+    background: url("/img/suup.png") center bottom no-repeat; 
+    background-size: cover;
     width: 372px;
     height:311px;
     margin: 10px;
+    position: relative;
 }
 .element-3 {
-    background: url(/position-task1/img/raspberry.png);
+    background: url(/img/raspberry.png) center;
     width: 372px;
     height: 311px;
     margin: 10px;
+    position: relative;
 }
 .img {
     border: 2px solid green;
     display: flex;
     justify-content: center;
 }
-input {
+input, 
+button {
     width: 200px;
     height: 56px;
     background: red;
@@ -71,4 +93,43 @@ color: #ffffff;
 font-weight: 300;
 font-family: "Raleway";
 margin: 50px auto; 
+}
+.data {
+width: 60px;
+height: 60px;
+background-color: rgba(128, 128, 128,0.3);
+border-radius: 4px;
+font-size: 24px;
+/* line-height: 25px; */
+color: #ffffff;
+font-weight: 700;
+font-family: "Raleway";
+text-align: center;
+text-transform: uppercase;
+position: relative;
+top: 45px;
+left: 45px;
+}
+.big-text {
+    width: 340px;
+height: 79px;
+font-size: 20px;
+/* line-height: 25px; */
+color: #ffffff;
+font-weight: 600;
+font-family: "Raleway";
+position: relative;
+left: 20px;
+top: 150px;
+}
+.small-text {
+    width: 370px;
+    font-size: 12px;
+    /* line-height: 25px; */
+    color: rgba(255, 255, 255,0.7);
+    font-weight: 600;
+    font-family: "Raleway";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
 }
