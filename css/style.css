@@ -62,7 +62,7 @@ margin: 30px 469px;
 }
 
 .element-2 {
-    background: url("/img/suup.png") center bottom no-repeat; 
+    background: url(/position-task-1/img/suup.png) center bottom no-repeat; 
     background-size: cover;
     width: 372px;
     height:311px;
@@ -70,7 +70,7 @@ margin: 30px 469px;
     position: relative;
 }
 .element-3 {
-    background: url(/img/raspberry.png) center;
+    background: url(/position-task-1/img/raspberry.png) center;
     width: 372px;
     height: 311px;
     margin: 10px;
@@ -108,7 +108,11 @@ text-align: center;
 text-transform: uppercase;
 position: relative;
 top: 45px;
+
 left: 45px;
+/* transform: translateX(180px) rotate(45deg); */
+/* transform: rotate(45deg) */
+
 }
 .big-text {
     width: 340px;
