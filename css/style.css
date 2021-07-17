@@ -38,6 +38,7 @@ font-weight: 300;
 font-family: "Raleway";
 text-align: center;
 margin: 30px 469px;
+
 }
 .element-1 {
     background: url("/position-task-1/img/juice.png");
@@ -93,7 +94,14 @@ color: #ffffff;
 font-weight: 300;
 font-family: "Raleway";
 margin: 50px auto; 
+transition: font-size 5s, color 5s;
 }
+
+button:hover {
+    font-size: 25px;
+    color: green;
+}
+
 .data {
 width: 60px;
 height: 60px;
